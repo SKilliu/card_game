@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/deck.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/round.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/card_actions.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/card_actions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/cards.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/cards.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/constants.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
