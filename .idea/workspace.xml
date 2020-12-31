@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/card_actions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/cards.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/card_game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/card_game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/deck.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/round.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/card_actions.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/card_actions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cards.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/cards.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/constants.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1m6oi6xJ2MG0SsGqemJKTHkLiTh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,10 +50,10 @@
     <property name="configurable..is.expanded" value="true" />
     <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookofbabylon-server" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/SKilliu/card_game">
     <configuration name="go build card_game" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="card_game" />
       <working_directory value="$PROJECT_DIR$" />
@@ -51,8 +63,18 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/SKilliu/card_game" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="card_game" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/SKilliu/card_game" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/SKilliu/card_game" />
         <item itemvalue="Go Build.go build card_game" />
       </list>
     </recent_temporary>
