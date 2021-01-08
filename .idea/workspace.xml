@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/html/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrations/000001_initialize_schema.down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrations/000001_initialize_schema.up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/envs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/load_envs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +62,13 @@
     <property name="configurable..is.expanded" value="true" />
     <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookofbabylon-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/SKilliu/card_game">
     <configuration name="go build card_game" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">

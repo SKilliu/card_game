@@ -1,0 +1,11 @@
+info:
+  contact: {}
+  title: Card Game API
+  version: "1.0"
+paths: {}
+securityDefinitions:
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
