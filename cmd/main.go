@@ -1,13 +1,8 @@
 package main
 
 import (
-	"fmt"
-
-	app "github.com/SKilliu/card_game"
-	"github.com/SKilliu/card_game/config"
-	"github.com/SKilliu/card_game/utils"
-	"github.com/pkg/errors"
-	"github.com/swaggo/swag/example/basic/docs"
+	"github.com/SKilliu/card_game/internal/server"
+	"github.com/sirupsen/logrus"
 )
 
 const pathToConfigFile = "./static/envs.yaml"
@@ -18,18 +13,11 @@ const pathToConfigFile = "./static/envs.yaml"
 // @in header
 // @name Authorization
 func main() {
-	apiConfig := config.New()
-	log := apiConfig.Log()
+	log := &logrus.Logger{}
+	logger := logrus.NewEntry(log)
 
-	utils.UploadEnvironmentVariables(pathToConfigFile)
-
-	docs.SwaggerInfo.Host = fmt.Sprintf("%s:%s", apiConfig.HTTP().Host, apiConfig.HTTP().Port)
-
-	api := app.New(apiConfig)
-	if err := api.Start(); err != nil {
-		log.WithError(err)
-		panic(errors.Wrap(err, "failed to start api"))
-	}
+	server.Init(logger)
+	server.Start()
 }
 
 //http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
