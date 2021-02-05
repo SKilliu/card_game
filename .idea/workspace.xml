@@ -2,28 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/server/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/server/logging.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/server/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/db/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/db/logging.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/s3/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/s3/logging.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/s3/put_file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/s3/s3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/server/handlers/get_start_page.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/server/handlers/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/server/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/card_game.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/http.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/log.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrations/000001_initialize_schema.down.sql" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/migrations/000001_initialize_schema.down.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrations/000001_initialize_schema.up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/migrations/000001_initialize_schema.up.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/card_actions.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/card_actions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/cards.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/cards.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deck.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/deck.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/round.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/round.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/envs.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/envs.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/html/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/html/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/migrations/000001_initialize_schema.up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/migrations/000001_initialize_schema.up.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/envs.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/envs.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/html/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/html/page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,15 +72,19 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/internal" />
       <recent name="$PROJECT_DIR$/cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/SKilliu/card_game">
+  <component name="RunManager" selected="Go Build.go build scratch.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="card_game" />
+      <module name="cardgame" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
@@ -90,7 +94,7 @@
       <method v="2" />
     </configuration>
     <configuration name="go build card_game" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="card_game" />
+      <module name="cardgame" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
@@ -99,7 +103,7 @@
       <method v="2" />
     </configuration>
     <configuration name="go build github.com/SKilliu/card_game" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="card_game" />
+      <module name="cardgame" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
@@ -107,8 +111,20 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build scratch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="cardgame" />
+      <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="GO111MODULE" value="off" />
+      </envs>
+      <kind value="FILE" />
+      <filePath value="$APPLICATION_CONFIG_DIR$/scratches/scratch.go" />
+      <package value="card_game" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="card_game" />
+      <module name="cardgame" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <framework value="gotest" />
@@ -120,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build scratch.go" />
         <item itemvalue="Go Build.go build github.com/SKilliu/card_game" />
         <item itemvalue="Go Build.go build card_game" />
       </list>

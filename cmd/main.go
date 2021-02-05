@@ -1,11 +1,15 @@
 package main
 
 import (
-	"github.com/SKilliu/card_game/internal/server"
+	"github.com/SKilliu/cardgame/internal/db"
+	"github.com/SKilliu/cardgame/internal/s3"
+	"github.com/SKilliu/cardgame/internal/server"
+	"github.com/SKilliu/cardgame/utils"
+	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )
 
-const pathToConfigFile = "./static/envs.yaml"
+const pathToConfigFile = "./envs.yaml"
 
 // @title Card Game API
 // @version 1.0
@@ -13,50 +17,17 @@ const pathToConfigFile = "./static/envs.yaml"
 // @in header
 // @name Authorization
 func main() {
-	log := &logrus.Logger{}
+	log := logrus.New()
 	logger := logrus.NewEntry(log)
 
-	server.Init(logger)
-	server.Start()
-}
+	utils.UploadEnvironmentVariables(pathToConfigFile)
 
-//http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-//	file, err := os.Open("./static/html/page.html")
-//	if err != nil {
-//		return
-//	}
-//	defer file.Close()
-//
-//	t, err := template.ParseFiles("./static/html/page.html")
-//	if err != nil {
-//		return
-//	}
-//
-//	//t, err := template.New("webpage").Parse(tmpl)
-//	//check(err)
-//
-//	data := struct {
-//		Title string
-//		Items []string
-//	}{
-//		Title: "My page",
-//		Items: []string{
-//			"My photos",
-//			"My blog",
-//		},
-//	}
-//
-//	err = t.Execute(w, data)
-//	if err != nil {
-//		return
-//	}
-//})
-//
-//game := models.NewGame(2, "x1")
-//
-//game.AddRound()
-//
-//fmt.Println(game)
-//
-//// server started
-//log.Fatal(http.ListenAndServe(":8000", nil))
+	db.Init(logger)
+	s3.Init(logger)
+	server.Init(logger)
+
+	err := server.Start()
+	if err != nil {
+		panic(errors.Wrap(err, "failed to start api"))
+	}
+}

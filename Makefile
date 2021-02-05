@@ -1,4 +1,4 @@
-MIGRATIONS_FOLDER=db/migrations
+MIGRATIONS_FOLDER=internal/db/migrations
 
 DATABASE_URL='postgres://postgres:1234567@localhost:5430/card-game?sslmode=disable'
 
