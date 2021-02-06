@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/SKilliu/cardgame/internal/db"
-	"github.com/SKilliu/cardgame/internal/s3"
 	"github.com/SKilliu/cardgame/internal/server"
 	"github.com/SKilliu/cardgame/utils"
 	"github.com/pkg/errors"
@@ -23,7 +22,7 @@ func main() {
 	utils.UploadEnvironmentVariables(pathToConfigFile)
 
 	db.Init(logger)
-	s3.Init(logger)
+	//s3.Init(logger)
 	server.Init(logger)
 
 	err := server.Start()

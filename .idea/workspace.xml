@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/db/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/db/logging.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/s3/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/s3/logging.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/s3/put_file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/s3/s3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/server/handlers/get_start_page.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/server/handlers/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/server/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/card_game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/db/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/server/handlers/create_user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/migrations/000001_initialize_schema.up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/migrations/000001_initialize_schema.up.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/envs.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/envs.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/html/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/html/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/server/handlers/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/handlers/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/server/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

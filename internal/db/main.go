@@ -10,38 +10,25 @@ import (
 	_ "github.com/lib/pq"
 )
 
-var dbConn QInterface
-
-type QInterface interface {
-	DB() *dbr.Connection
-}
-
-// DB wraps interface.
-type DB struct {
-	db *dbr.Connection
-}
-
-// DB returns db client.
-func (d DB) DB() *dbr.Connection {
-	return d.db
-}
+var dbConn *dbr.Connection
 
 // New connection opening.
-func New(config string) (QInterface, error) {
+func NewConnection(config string) {
 	db, err := dbr.Open("postgres", config, nil)
 	if err != nil {
-		return nil, err
+		logger.WithError(err).Error("failed to open db connection")
+		panic(err)
 	}
 
 	err = db.Ping()
 	if err != nil {
 		logger.WithError(err).Error("failed to ping db")
-		return nil, err
+		panic(err)
 	}
 
 	logger.Info("db connection successfully created")
 
-	return &DB{db: db}, err
+	dbConn = db
 }
 
 func Init(log *logrus.Entry) {
@@ -49,13 +36,8 @@ func Init(log *logrus.Entry) {
 
 	loadConfigFromEnvs()
 
-	conn, err := New(configuration.Info())
-	if err != nil {
-		log.WithError(err).Error("failed to setup db")
-		panic(err)
-	}
+	NewConnection(configuration.Info())
 
-	dbConn = conn
 }
 
 func (d Configuration) Info() string {
@@ -65,6 +47,6 @@ func (d Configuration) Info() string {
 	)
 }
 
-func Connection() QInterface {
+func Connection() *dbr.Connection {
 	return dbConn
 }

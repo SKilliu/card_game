@@ -20,6 +20,7 @@ func NewRouter(logger *logrus.Entry) *echo.Echo {
 
 	e.GET("/", healthz)
 	e.GET("/start", handler.GetStartPage)
+	e.POST("/user", handler.CreateUser)
 
 	return e
 }
