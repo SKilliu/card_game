@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/db/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/server/handlers/create_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/server/handlers/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/handlers/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/server/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/router.go" afterDir="false" />
-    </list>
+    <list default="true" id="e8a72813-fd9c-453a-86fe-158974e99bf1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +45,7 @@
     <property name="configurable..is.expanded" value="true" />
     <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookofbabylon-server" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
